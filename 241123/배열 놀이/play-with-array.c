@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int where1(int arr[], int n, int b){
     for(int i=0;i<n;i++){
-        if(arr[i] == b) return i;
+        if(arr[i] == b) return i+1;
     }
     return 0;
 }
@@ -26,7 +26,7 @@ int main() {
                 break;
             case 2:
                 scanf("%d", &n1);
-                printf("%d\n", where1(arr, n, n1)+1);
+                printf("%d\n", where1(arr, n, n1));
                 break;
             case 3:
                 scanf("%d %d", &n1, &n2);
