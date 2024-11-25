@@ -12,8 +12,8 @@ int main() {
     for(int i=999;i>=0;i--)
     {
         if(arr[i] == 1){
-        printf("%d\n", arr[i]+1);
-        break;
+            printf("%d\n", i+1);
+            break;
         }
         else if(i == 0){
             printf("-1\n");
